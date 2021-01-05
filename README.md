@@ -1,3 +1,3 @@
 # CUM
 ## Common User Manager
-a way to manage your users
+a way to verify your users
