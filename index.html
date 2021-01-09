@@ -7,29 +7,33 @@
         <style>
             body{
                 background-color: #84ffff;
+                background-image: linear-gradient(to right, #6fd6ff, #7aff75, #04ffde);
                 font-family: arial;
                 margin: 0.1em auto 0.1em auto;
             }
             .tit{
-                border-style: outset;
+                border-style: ridge;
                 border-width: 0.5cm;
                 border-color: #a8a8a8;
+                background-image: linear-gradient(rgb(233, 233, 233), #c2c2c2);
                 background-color: gainsboro;
                 text-align: center;
                 color: #d6b707;
             }
             h1{
                 font-size: 3cm;
+                line-height: 1cm;
             }
             h6{
                 font-size: 1cm;
+                line-height: 0.1cm;
             }
             a{
                 color: rgb(175, 163, 94);
                 text-decoration: none;
                 border-color: #a8a8a8;
                 background-color: gainsboro;
-                border-width: 0.4cm;
+                border-width: 0.2cm;
                 font-size: 30px;
             }
             a:hover{
@@ -40,6 +44,27 @@
             }
             a:active{
                 border-style: inset;
+            }
+            .btnlist{
+                border-style: groove ridge ridge groove;
+                border-color: #67cef7;
+                border-width: 0.2cm;
+                margin: 0.1em 5px 0.1em 5px;
+            }
+            .textpart{
+                background-color: #eee6ba;
+                background-image: linear-gradient(to right, #eee6ba, #feffaa);
+                border-style: double;
+                border-width: 10px;
+                margin: 15px;
+            }
+            ul{
+                font-size: 20px;
+            }
+            code{
+                margin: 5px;
+                border: 1px solid black;
+                background-color: #e7e7e7;
             }
         </style>
     </head>
@@ -53,6 +78,36 @@
             </h6>
         </div>
         <br>
-        <a href="https://github.com/SteveSWang47/CUM-public/releases/">Go to the "releases" page and download</a>
+        <div class="btnlist">
+            <a href="https://github.com/SteveSWang47/CUM-public/releases/">Go to the "releases" page and download</a>
+            <a href="https://github.com/SteveSWang47/CUM-public">Go to the "main" page and view the code</a>
+        </div>
+        <br>
+        <div class="textpart">
+            <h2>How to use CUM?</h2>
+            <p>
+                <ul>
+                    <li>New user</li>
+                    <dd>
+                        n/new command : <code>n &#60;NAME&#62;</code> / <code>new &#60;NAME&#62; </code><br>
+                        <code>n Alice</code> <br>
+                        <code>new Bob</code> <br>
+                        Output: <code>The serial number of this user is XXX”</code> <br>
+                    </dd>
+                    <li>Verify user</li>
+                    <dd>
+                        v/verify command : <code>v &#60;NAME&#62; &#60;NUM&#62;</code> / <code>verify &#60;NAME&#62; &#60;NUM&#62;</code> <br>
+                        <code>v Alice 0</code><br>
+                        <code>verify Bob 1</code> <br>
+                        Output(SUCCESS): <code>[OK] The user verified successfully.</code> <br>
+                        Output(FAILED): <code>[!!] The user does not exist.”</code> <br>
+                    </dd>
+                    <li>Exit</li>
+                    <dd>
+                        <code>q</code>/<code>quit</code>/<code>exit</code> command <br>
+                    </dd>
+                </ul>
+            </p>
+        </div>
     </body>
 </html>
