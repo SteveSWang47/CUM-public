@@ -1,3 +1,3 @@
 # CUM
-## Common User Manager
-a way to verify your users
+## A tool
+### DO NOT DOWNLOAD IT.
